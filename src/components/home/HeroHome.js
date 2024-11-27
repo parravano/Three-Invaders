@@ -27,6 +27,11 @@ const StyledImg = styled(BackgroundImage)`
   @media (min-width: 768px) and (max-width: 1650px) {
     height: 50vw;
   }
+  @media (max-width: 565px) {
+   height: 90vh;
+   background-position: right !important;
+
+  }
 `;
 
 export default Image;
