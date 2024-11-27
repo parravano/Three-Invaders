@@ -21,17 +21,20 @@ const Image = () => {
 };
 
 const StyledImg = styled(BackgroundImage)`
-  display: block !important;
-  height: 90vh;
-  background-position: 80% 50% !important;
-  @media (min-width: 768px) and (max-width: 1650px) {
-    height: 50vw;
-  }
-  @media (max-width: 565px) {
-   height: 90vh;
-   background-position: right !important;
+    display: block !important;
+    height: 90vh;
+    background-position: 80% 50% !important;
+    background-size: cover; /* Ensures the image covers the container */
 
-  }
+    @media (min-width: 768px) and (max-width: 1650px) {
+        height: 50vw;
+    }
+
+    @media (max-width: 767px) {
+        height: 90vh;
+        background-position: center center !important;
+        background-size: cover; /* Retain aspect ratio */
+    }
 `;
 
 export default Image;
