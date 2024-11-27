@@ -24,5 +24,9 @@ const StyledImg = styled(BackgroundImage)`
   display: block !important;
   height: 90vh;
   background-position: 80% 50% !important;
+  @media (min-width: 768px) and (max-width: 1650px) {
+    height: 50vw;
+  }
 `;
+
 export default Image;
