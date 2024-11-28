@@ -23,8 +23,8 @@ const Image = () => {
 const StyledImg = styled(BackgroundImage)`
     display: block !important;
     height: 90vh;
-    background-position: 80% 50% !important;
-    background-size: cover; /* Ensures the image covers the container */
+    background-position: 80% !important;
+    background-size: cover; 
 
     @media (min-width: 768px) and (max-width: 1650px) {
         height: 50vw;
